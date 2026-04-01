@@ -147,7 +147,7 @@ export default function Hero() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.7, ease: 'easeOut' }}
             >
-              <img src="/avatar.jpg" alt="Moaaz Salama" className="hero-avatar" />
+              <img src={`${import.meta.env.BASE_URL}avatar.jpg`} alt="Moaaz Salama" className="hero-avatar" />
               <div className="hero-avatar-ring" />
             </motion.div>
 
