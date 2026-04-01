@@ -138,6 +138,19 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
+          {/* Right column: photo + cards */}
+          <div className="hero-right">
+            {/* Profile photo */}
+            <motion.div
+              className="hero-avatar-wrap"
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.7, ease: 'easeOut' }}
+            >
+              <img src="/avatar.jpg" alt="Moaaz Salama" className="hero-avatar" />
+              <div className="hero-avatar-ring" />
+            </motion.div>
+
           {/* Floating cards */}
           <div className="hero-cards">
             {heroCards.map((card, i) => (
@@ -154,6 +167,7 @@ export default function Hero() {
                 <div className="hero-card-sub">{card.sub}</div>
               </motion.div>
             ))}
+          </div>
           </div>
         </div>
       </div>
